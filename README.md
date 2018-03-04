@@ -3,15 +3,15 @@
   game recommmendations through http://localhost:8080/index.html. 
   
 ## Prerequisites
-   . Windows or unit Operating system, Java 8, Maven, Docker-toolbox setup and Java IDE(Eclipse/IntelliJ Idea).
-   . Optional : MySQL server.
+   - Windows or unit Operating system, Java 8, Maven, Docker-toolbox setup and Java IDE(Eclipse/IntelliJ Idea).
+   - Optional : MySQL server.
    
 
 ### Getting Started
    
-   . To setup this project and start running, clone the github url on your local workspace. Import into a IDE of your choice(Eclipse/IntelliJ Idea). 
+   - To setup this project and start running, clone the github url on your local workspace. Import into a IDE of your choice(Eclipse/IntelliJ Idea). 
    
-   . (Optional Step- if not using docker setup:)  On the MySQL server, login as root user and run the schema.sql located in the project root path to create game schema, users and grant permissions.
+   - (Optional Step- if not using docker setup:)  On the MySQL server, login as root user and run the schema.sql located in the project root path to create game schema, users and grant permissions.
       normally mvn commands on spring boot runs this automatically and generates schema but sometimes it doesnt work in some users. so keeping it explicit.
    
    After downloading/cloning project into a local IDE, run the below command.
@@ -22,9 +22,9 @@
    Once the application is started you can use the url http://localhost:8080/index.html to upload the customer_data.csv(at root path)
    to generate some data in db for testing of exposed service to fetch the recommendations.
    
-   . Login to mysql database game schema and verify the data persisted using query (select * from customer)
+   1. Login to mysql database game schema and verify the data persisted using query (select * from customer)
    
-   . Use a Rest client tool like Postman to get the recommended games for the uploaded customers. Sample GET request as below:
+   2. Use a Rest client tool like Postman to get the recommended games for the uploaded customers. Sample GET request as below:
    
    http://localhost:8080//customers/11113/games/recommendations?count=5
    
@@ -70,8 +70,8 @@
    
 ##### Author
 
-   . Anupam Shrivastava 
-   . shanupam@gmail.com
+   - Anupam Shrivastava 
+   - shanupam@gmail.com
 
 ###### License
    NA
