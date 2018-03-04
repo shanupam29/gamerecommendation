@@ -1,5 +1,5 @@
 # Project Title 
-  Game Product Recommendation app is to facilitate games recommendations to the customer on a website, the admin will have provision to uplooad csv file with list of upto 10 
+  Game Product Recommendation app is to facilitate games recommendations to the customer on a website, the admin will have provision to upload csv file with list of upto 10 
   game recommmendations through http://localhost:8080/index.html. 
   
 ## Prerequisites
@@ -16,7 +16,7 @@
    
    After downloading/cloning project into a local IDE, run the below command.
    
-   $ mvn clean install spring-boot:run
+   `$ mvn clean install spring-boot:run`
    
    The above command generate necessary artifacts target/ directory and run the unit tests against the rest controller. 
    Once the application is started you can use the url http://localhost:8080/index.html to upload the customer_data.csv(at root path)
@@ -35,7 +35,7 @@
    
    Step 1: Run the below maven command to create the project image. 
     
-   $ mvn clean package docker:build
+   `$ mvn clean package docker:build`
    
    Above command generates a docker image of the spring boot app by using src/main/docker/DockerFile using com.spotify.docker-maven-plugin. 
    Please verify the below 2 properies before running the commmand in user local machine
@@ -45,7 +45,7 @@
     
    Once the maven build is successful. The docker image will be create in the local docker registry. This can be verified by running :
    
-   $ docker images
+   `$ docker images`
    
    The newly generated image will be listed here.
    
@@ -53,7 +53,7 @@
    To achieve this, docker-compose.yml is provided with necessary orchestration of the 2 service(spring-boot and mysql)
    Next step is to navigate to the root folder and run the below command. 
    
-   $ docker-compose up
+   `$ docker-compose up`
    
    This will take some time the first time as it tries to download the image from dockerhub and start on the necessary port, create schema etc.
    
