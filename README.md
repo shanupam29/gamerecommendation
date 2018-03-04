@@ -84,3 +84,6 @@
 
 ####  Built With
    Java 8, Maven 3, MySQl, Docker, Spring boot, Junit, Apache Commons, common-fileupload
+
+#### Resources 
+   [Customer Data CSV file sample at root path:] (customer_data.csv)
