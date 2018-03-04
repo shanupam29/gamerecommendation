@@ -47,7 +47,7 @@
    Please verify the below 2 properies before running the commmand in user local machine
    
    <dockerHost>https://192.168.99.100:2376</dockerHost> <!--Docker host of user, you can verify by using docker machine env and modify if required-->
-   <dockerCertPath>~\.docker\machine\default\</dockerCertPath> <!--Certificate path as the above url is https-->
+   <dockerCertPath>~\/.docker\machine\default\/</dockerCertPath> <!--Certificate path as the above url is https-->
     
    **Step 3:** Once the maven build is successful. The docker image will be create in the local docker registry. This can be verified by running :
    
