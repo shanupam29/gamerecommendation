@@ -28,7 +28,13 @@
    
    http://localhost:8080//customers/11113/games/recommendations?count=5
    
-   
+   - API Details. 
+   Mainly there are 2 endpoints on this application. Details as below: 
+    1. To retrieve games for a given customer -  CustomerController.fetchGamesById().  
+         - GET /customers/{id}/games/recommendations    
+    2. To upload games for one or more customers using csv file. - CustomerController.uploadGamesRecommendationFile()
+         - POST /customers/upload-customers
+      
 #### Installing with Docker
    
    The Docker setup for the app, is managed by maven and docker-compose. Make sure the docker machine is running on the local machine to ensure the daemon is up.
@@ -73,8 +79,8 @@
    - Anupam Shrivastava 
    - shanupam@gmail.com
 
-###### License
+##### License
    NA
 
-####### Built With
+#####  Built With
    Java 8, Maven 3, MySQl, Docker, Spring boot, Junit, Apache Commons, common-fileupload
