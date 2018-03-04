@@ -1,1 +1,7 @@
-CREATE TABLE CUSTOMER(ID INT PRIMARY KEY, RECOMMENDATION_STATUS VARCHAR(255),REC1 VARCHAR(255));
+create database games;
+
+create user 'game'@'localhost' identified by 'game';
+
+grant all on games.* to 'game'@'localhost';
+
+commit;

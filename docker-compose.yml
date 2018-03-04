@@ -1,0 +1,22 @@
+version: '2.1'
+
+services:
+  game-mysql:
+    image: mysql:latest
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=games
+      - MYSQL_USER=game
+      - MYSQL_PASSWORD=game
+  spring-boot-jpa-docker-webapp:
+    image: g@me/GameProductRecommendation
+    depends_on:
+      - game-mysql
+    ports:
+      - 8080:8080
+    environment:
+      - DATABASE_HOST=game-mysql
+      - DATABASE_USER=game
+      - DATABASE_PASSWORD=game
+      - DATABASE_NAME=games
+      - DATABASE_PORT=3306
