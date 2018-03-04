@@ -1,9 +1,9 @@
 # Project Title 
   Game Product Recommendation app is to facilitate games recommendations to the customer on a website, the admin will have provision to upload csv file with list of upto 10 
-  game recommmendations through http://localhost:8080/index.html. 
+  game recommendations through http://localhost:8080/index.html. 
   
 ## Prerequisites
-   - Windows or unit Operating system, Java 8, Maven, Docker-toolbox setup and Java IDE(Eclipse/IntelliJ Idea).
+   - Windows/Linux Operating System, Java 8, Maven 3, Docker-toolbox setup and Java IDE(Eclipse/IntelliJ Idea).
    - Optional : MySQL server.
    
 
@@ -12,14 +12,14 @@
    - To setup this project and start running, clone the github url on your local workspace. Import into a IDE of your choice(Eclipse/IntelliJ Idea). 
    
    - (Optional Step- if not using docker setup:)  On the MySQL server, login as root user and run the schema.sql located in the project root path to create game schema, users and grant permissions.
-      normally mvn commands on spring boot runs this automatically and generates schema but sometimes it doesnt work in some users. so keeping it explicit.
+      normally mvn commands on spring boot runs this automatically and generates schema but sometimes it doesn't work in some users. so keeping it explicit.
    
    After downloading/cloning project into a local IDE, run the below command.
    
    `$ mvn clean install spring-boot:run`
    
    The above command generate necessary artifacts target/ directory and run the unit tests against the rest controller. 
-   Once the application is started you can use the url http://localhost:8080/index.html to upload the customer_data.csv(at root path)
+   Once the application is started you can use the url http://localhost:8080/index.html to upload the [CSV to upload](./customer_data.csv) at root path.
    to generate some data in db for testing of exposed service to fetch the recommendations.
    
    1. Login to mysql database game schema and verify the data persisted using query (select * from customer)
@@ -86,4 +86,4 @@
    Java 8, Maven 3, MySQl, Docker, Spring boot, Junit, Apache Commons, common-fileupload
 
 #### Resources 
-   [Customer Data CSV file sample at root path:](./customer_data.csv)
+   [Customer Data CSV file sample:](./customer_data.csv)
