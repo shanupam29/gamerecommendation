@@ -5,9 +5,7 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfiguration;
-/*
-*This is a new feature.
-*/
+
 @SpringBootApplication
 @EnableAutoConfiguration(exclude={MultipartAutoConfiguration.class})
 @EntityScan(basePackages = {"com.assignment.game.recommendation.entity"})
